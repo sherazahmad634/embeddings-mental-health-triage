@@ -8,11 +8,15 @@ to one of four **support tiers**:
 
 Repository:
 https://github.com/sherazahmad634/embeddings-mental-health-triage
+
 Hugging Face dataset:
  https://huggingface.co/datasets/Sherazahmad634/mental-health-support-tier
+
 Hugging Face model:
  https://huggingface.co/Sherazahmad634/mental-health-support-tier-classifier
-Hugging Face Space (demo): https://huggingface.co/spaces/Sherazahmad634/mental-health-support-tier-demo
+
+Hugging Face Space (demo): 
+https://huggingface.co/spaces/Sherazahmad634/mental-health-support-tier-demo
 
 
 
