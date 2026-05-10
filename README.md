@@ -127,6 +127,7 @@ Both backends produce a `classifier.joblib` with the same shape, so `app.py`
 runs against either one without modification.
 
 
+
 ## Tech Stack
 
 - Python
@@ -137,6 +138,17 @@ runs against either one without modification.
 - Pandas
 - NumPy
 
-MIT for the code, [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
-for the dataset.
+## Future Work
+
+- Multilingual support
+- Real-world anonymized evaluation
+- Larger datasets
+- Transformer fine-tuning
+- Context-aware triage
+
+## Author
+
+Sheraz Ahmad  
+Master's Student — AI and Language  
+Stockholm University
 
