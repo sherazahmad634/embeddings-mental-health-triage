@@ -6,7 +6,7 @@ to one of four **support tiers**:
 | Tier            | Meaning                                                                  |
 | --------------- | ------------------------------------------------------------------------ |
 | `self_help`     | Low-intensity, transient complaints. Habit/lifestyle suggestions help.   |
-| `peer_support`  | Moderate distress that benefits from talking with friends or community.  |
+| `peer_support`  | Moderate distress that benefits from talking with friends or the community.  |
 | `professional`  | Persistent symptoms that warrant a clinician (therapist, GP, etc.).      |
 | `crisis`        | Acute risk language that warrants an immediate crisis resource.          |
 
@@ -20,7 +20,7 @@ covers all four required artefacts:
    test set).
 4. A working Gradio demo that runs locally and on Hugging Face Spaces.
 
-> **Disclaimer.** This is a research / coursework demo, not a diagnostic tool.
+> **Disclaimer.** This is a research/coursework demo, not a diagnostic tool.
 > The Gradio app shows crisis resources on every prediction so that a model
 > error in the highest-risk tier cannot suppress them.
 
@@ -32,7 +32,7 @@ covers all four required artefacts:
 # 1. install (CPU is fine; first run downloads ~80 MB for the embedder)
 pip install -r requirements.txt
 
-# 2. regenerate the dataset (deterministic, ~1000 examples in 4 balanced classes)
+# 2. Regenerate the dataset (deterministic, ~1000 examples in 4 balanced classes)
 python scripts/generate_dataset.py --per-class 250 --seed 42
 
 # 3. train + evaluate three classifiers; the best one is saved
@@ -43,7 +43,7 @@ python scripts/train_classifier.py --backend tfidf         # TF-IDF baseline
 # 4. sanity-check on hand-written, out-of-template messages
 python scripts/evaluate_adversarial.py
 
-# 5. run the demo locally (http://127.0.0.1:7860)
+# 5. Run the demo locally (http://127.0.0.1:7860)
 python app.py
 ```
 
@@ -71,7 +71,7 @@ python app.py
 ├── deploy/
 │   ├── HUGGINGFACE.md              # exact commands for pushing to HF
 │   └── GITHUB.md                   # exact commands for pushing to GitHub
-├── report.md                       # 2-page academic report
+├── report.pdf                      # 2-page academic report
 ├── requirements.txt
 └── README.md
 ```
@@ -92,7 +92,7 @@ text  ─►  sentence-transformers/all-MiniLM-L6-v2  ─►  384-dim vector  �
 - The script picks the classifier with the best macro-F1 on the held-out test
   split and serialises it to `models/classifier.joblib`. The bundle also
   contains the label map (and the TF-IDF vectorizer if the baseline backend
-  was used) so the demo is one `joblib.load` away from running.
+  was used), so the demo is one `joblib.load` away from running.
 
 ### Why "linear probe"?
 
@@ -124,24 +124,7 @@ The training script supports two feature backends through `--backend`:
 Both backends produce a `classifier.joblib` with the same shape, so `app.py`
 runs against either one without modification.
 
-## Deployment
 
-- `deploy/HUGGINGFACE.md` — push the dataset, the classifier bundle, and the
-  Gradio Space.
-- `deploy/GITHUB.md` — initialise the repo and push it to GitHub.
-
-## Ethics & safety notes
-
-- All training data is synthetic. No real user messages were collected.
-- Crisis-tier templates are generic and non-instructional, written to
-  describe *the need for help* rather than any operational detail.
-- The Gradio app shows a crisis-resources banner on **every** request, not
-  only when the classifier predicts "crisis", so a model error cannot
-  suppress emergency contacts.
-- The model is small and shallow on purpose: its decisions are inspectable,
-  and it is not held out as a substitute for clinical judgement.
-
-## License
 
 MIT for the code, [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 for the dataset.
