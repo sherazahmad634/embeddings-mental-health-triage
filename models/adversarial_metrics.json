@@ -1,0 +1,23 @@
+{
+  "n": 20,
+  "correct": 19,
+  "accuracy": 0.95,
+  "per_class": {
+    "self_help": {
+      "correct": 4,
+      "total": 5
+    },
+    "peer_support": {
+      "correct": 5,
+      "total": 5
+    },
+    "professional": {
+      "correct": 5,
+      "total": 5
+    },
+    "crisis": {
+      "correct": 5,
+      "total": 5
+    }
+  }
+}

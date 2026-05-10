@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Large model files we don't want to commit (>100MB threshold for GitHub).
+# We keep the small joblib bundle so the demo is reproducible without re-training.
+models/embedder/
+*.onnx
+*.bin
+*.safetensors
+
+# Cached embeddings — regenerate with scripts/train_classifier.py
+models/train_embeddings.npy
+models/test_embeddings.npy
+
+# Gradio
+gradio_cached_examples/
+flagged/

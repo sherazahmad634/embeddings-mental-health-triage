@@ -1,0 +1,14 @@
+{
+  "label_to_id": {
+    "self_help": 0,
+    "peer_support": 1,
+    "professional": 2,
+    "crisis": 3
+  },
+  "id_to_label": {
+    "0": "self_help",
+    "1": "peer_support",
+    "2": "professional",
+    "3": "crisis"
+  }
+}

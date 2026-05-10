@@ -1,0 +1,149 @@
+{
+  "backend": "st",
+  "results": [
+    {
+      "name": "logreg",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "report": {
+        "self_help": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "peer_support": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "professional": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "crisis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        }
+      },
+      "train_seconds": 0.023186922073364258
+    },
+    {
+      "name": "linear_svm",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "report": {
+        "self_help": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "peer_support": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "professional": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "crisis": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 200.0
+        }
+      },
+      "train_seconds": 0.06605124473571777
+    },
+    {
+      "name": "mlp",
+      "accuracy": 0.99,
+      "macro_f1": 0.9899474641341686,
+      "report": {
+        "self_help": {
+          "precision": 0.9803921568627451,
+          "recall": 1.0,
+          "f1-score": 0.9900990099009901,
+          "support": 50.0
+        },
+        "peer_support": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 50.0
+        },
+        "professional": {
+          "precision": 1.0,
+          "recall": 0.96,
+          "f1-score": 0.9795918367346939,
+          "support": 50.0
+        },
+        "crisis": {
+          "precision": 0.9803921568627451,
+          "recall": 1.0,
+          "f1-score": 0.9900990099009901,
+          "support": 50.0
+        },
+        "accuracy": 0.99,
+        "macro avg": {
+          "precision": 0.9901960784313726,
+          "recall": 0.99,
+          "f1-score": 0.9899474641341686,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.9901960784313724,
+          "recall": 0.99,
+          "f1-score": 0.9899474641341687,
+          "support": 200.0
+        }
+      },
+      "train_seconds": 0.031414031982421875
+    }
+  ],
+  "best": "logreg",
+  "n_train": 798,
+  "n_test": 200,
+  "label_names": [
+    "self_help",
+    "peer_support",
+    "professional",
+    "crisis"
+  ]
+}
