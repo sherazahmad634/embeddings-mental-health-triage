@@ -2,6 +2,8 @@
 
 -A small embeddings-based text classifier that maps short user-written messages
 to one of four **support tiers**:
+
+
 -A lightweight embeddings-based NLP system that classifies short mental-health support messages into four support tiers using sentence embeddings and machine learning classifiers.
 | Tier            | Meaning                                                                  |
 | --------------- | ------------------------------------------------------------------------ |
