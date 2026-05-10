@@ -1,6 +1,5 @@
 # Embeddings-Based Mental-Health Support-Tier Triage
 
-**Student:** Shafqat — Assignment 1, Embeddings System (May 2026)
 **Repository:** `https://github.com/<your-username>/embeddings-mental-health-triage`
 **Hugging Face dataset:** `<your-username>/mental-health-support-tier`
 **Hugging Face model:** `<your-username>/mental-health-support-tier-classifier`
