@@ -1,8 +1,8 @@
 # Mental-Health Support Tier Triage
 
-A small embeddings-based text classifier that maps short user-written messages
+-A small embeddings-based text classifier that maps short user-written messages
 to one of four **support tiers**:
-
+-A lightweight embeddings-based NLP system that classifies short mental-health support messages into four support tiers using sentence embeddings and machine learning classifiers.
 | Tier            | Meaning                                                                  |
 | --------------- | ------------------------------------------------------------------------ |
 | `self_help`     | Low-intensity, transient complaints. Habit/lifestyle suggestions help.   |
@@ -125,6 +125,16 @@ Both backends produce a `classifier.joblib` with the same shape, so `app.py`
 runs against either one without modification.
 
 
+## Tech Stack
+
+- Python
+- Sentence Transformers
+- Scikit-learn
+- Gradio
+- Hugging Face
+- Pandas
+- NumPy
 
 MIT for the code, [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)
 for the dataset.
+
