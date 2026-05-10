@@ -5,6 +5,17 @@ to one of four **support tiers**:
 
 
 -A lightweight embeddings-based NLP system that classifies short mental-health support messages into four support tiers using sentence embeddings and machine learning classifiers.
+
+Repository:
+https://github.com/sherazahmad634/embeddings-mental-health-triage
+Hugging Face dataset:
+ https://huggingface.co/datasets/Sherazahmad634/mental-health-support-tier
+Hugging Face model:
+ https://huggingface.co/Sherazahmad634/mental-health-support-tier-classifier
+Hugging Face Space (demo): https://huggingface.co/spaces/Sherazahmad634/mental-health-support-tier-demo
+
+
+
 | Tier            | Meaning                                                                  |
 | --------------- | ------------------------------------------------------------------------ |
 | `self_help`     | Low-intensity, transient complaints. Habit/lifestyle suggestions help.   |
